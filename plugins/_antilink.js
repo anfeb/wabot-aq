@@ -10,7 +10,8 @@ handler.before = function (m, { isAdmin, isBotAdmin }) {
     m.reply(`*「 ANTI LINK 」*\n\nTerdeteksi *${await this.getName(m.sender)}* kamu telah mengirim link group!\n\nMaaf Kamu akan dikick dari grup ini byee!`)
     if (global.opts['restrict']) { 
      if (isAdmin || !isBotAdmin) return true 
-    await this.groupRemove(m.chat, [m.sender])
+     this.groupRemove(m.chat, [m.sender])
+    }
   }
   return true
 }
