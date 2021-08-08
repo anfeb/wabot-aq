@@ -6,7 +6,7 @@ handler.before = async function (m, { user, isBotAdmin, isAdmin }) {
 
   if ((m.isBaileys && m.fromMe) || m.fromMe || !m.isGroup) return true
 
-  let chat = global.DATABASE.data.chats[m.chat]
+  let chat = global.db.data.chats[m.chat]
 
   let isGroupLink = linkRegex.exec(m.text)
 
