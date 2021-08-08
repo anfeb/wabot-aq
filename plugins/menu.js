@@ -44,8 +44,8 @@ const defaultMenu = {
 │
 │ Uptime: *%uptime (%muptime)*
 │ Database: %rtotalreg of %totalreg
-│ Github:
-│ %github
+│ Follow IG :@anfebn
+│ https://instagram.com/anfebn
 ╰────
 %readmore`.trimStart(),
   header: '╭─「 %category 」',
